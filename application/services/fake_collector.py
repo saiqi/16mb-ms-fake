@@ -89,5 +89,6 @@ class FakeCollectorService(object):
         self.pub_notif(dumps({
             'id': msg['id'],
             'source': self.name,
+            'type': 'fake',
             'content': 'nice fake message'
         }))
